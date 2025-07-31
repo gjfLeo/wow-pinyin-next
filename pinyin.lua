@@ -104,6 +104,9 @@ function PinyinNext:IsCharacterPinyinMatchPrefix(characterPinyins, keywordPinyin
 end
 
 function PinyinNext:Match(text, keyword)
+  if keyword == "" then
+    return true
+  end
   local textPinyins = self:GetCharacterPinyinList(text)
   local textLength = #textPinyins
   local keywordBreak = self:BreakPinyinCharacters(keyword)
