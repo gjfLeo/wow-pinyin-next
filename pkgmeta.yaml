@@ -1,0 +1,7 @@
+ignore:
+  - .github
+  - .vscode
+  - .gitignore
+  - development.sh
+  - LICENSE
+  - README.md
