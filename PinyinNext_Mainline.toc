@@ -1,8 +1,12 @@
 ## Interface: 110107
 
 ## Title: PinyinNext
+## Notes: 让一些插件支持拼音相关功能。
 ## Author: gjfLeo
 ## Version: @project-version@
+
+## OptionalDeps: MountsJournal, Rematch, Routes
+
 ## X-Curse-Project-ID: 0
 
 main.lua
