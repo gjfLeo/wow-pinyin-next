@@ -167,7 +167,7 @@ function PinyinNext:HookSyndicator()
   end
 
   Syndicator.Search.CheckItem = function(details, searchText)
-    if self:Match(details.itemName, searchText) then
+    if details.itemName and self:Match(details.itemName, searchText) then
       return true
     end
     return self.Hooked.Syndicator_Search_CheckItem(details, searchText)
