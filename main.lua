@@ -26,6 +26,11 @@ function PinyinNext:Hook()
     self:HookRoutes()
     self:Printf("Routes功能已加载")
   end
+
+  if C_AddOns.IsAddOnLoaded("Syndicator") then
+    self:HookSyndicator()
+    self:Printf("Syndicator功能已加载")
+  end
 end
 
 function PinyinNext:HookMountsJournal()
@@ -33,7 +38,9 @@ function PinyinNext:HookMountsJournal()
   local journal = _G["MountsJournalFrame"]
   local util = _G["MountsJournalUtil"]
 
-  local original = journal.updateMountsList
+  if not PinyinNext.Hooked.MountsJournal_updateMountsList then
+    PinyinNext.Hooked.MountsJournal_updateMountsList = journal.updateMountsList
+  end
 
   journal.updateMountsList = function(journalSelf)
     local filters, list, newMounts, tags = mounts.filters, journalSelf.list, {}, journalSelf.tags
@@ -42,7 +49,7 @@ function PinyinNext:HookMountsJournal()
     local numMounts = 0
 
     if filters.onlyNew then
-      return original(journalSelf)
+      return self.Hooked.MountsJournal_updateMountsList(journalSelf)
     end
 
     journalSelf.dataProvider = CreateDataProvider()
@@ -149,5 +156,20 @@ function PinyinNext:HookRoutes()
   Routes.options.args.taboo_group.args.zone_choice.sorting = sortedZoneNames
   for _, v in pairs(Routes.options.args.routes_group.args) do
     v.order = zonePinyinOrder[v.name]
+  end
+end
+
+function PinyinNext:HookSyndicator()
+  local Syndicator = _G["Syndicator"]
+
+  if not self.Hooked.Syndicator_Search_CheckItem then
+    self.Hooked.Syndicator_Search_CheckItem = Syndicator.Search.CheckItem
+  end
+
+  Syndicator.Search.CheckItem = function(details, searchText)
+    if self:Match(details.itemName, searchText) then
+      return true
+    end
+    return self.Hooked.Syndicator_Search_CheckItem(details, searchText)
   end
 end
