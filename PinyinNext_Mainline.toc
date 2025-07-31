@@ -9,4 +9,8 @@
 
 ## X-Curse-Project-ID: 0
 
+init.lua
+utils.lua
+dict.lua
+pinyin.lua
 main.lua
