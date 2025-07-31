@@ -1,3 +1,4 @@
+package-as: PinyinNext
 ignore:
   - .github
   - .vscode
