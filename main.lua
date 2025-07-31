@@ -166,10 +166,16 @@ function PinyinNext:HookSyndicator()
     self.Hooked.Syndicator_Search_CheckItem = Syndicator.Search.CheckItem
   end
 
-  Syndicator.Search.CheckItem = function(details, searchText)
-    if details.itemName and self:Match(details.itemName, searchText) then
+  Syndicator.Search.CheckItem = function(details, searchString)
+    details.fullMatchInfo = details.fullMatchInfo or {}
+    local result = details.fullMatchInfo[searchString]
+    if result ~= nil then
+      return details.fullMatchInfo[searchString]
+    end
+    if details.itemName and self:Match(details.itemName, searchString) then
+      details.fullMatchInfo[searchString] = true
       return true
     end
-    return self.Hooked.Syndicator_Search_CheckItem(details, searchText)
+    return self.Hooked.Syndicator_Search_CheckItem(details, searchString)
   end
 end

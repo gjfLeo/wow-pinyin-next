@@ -14,7 +14,7 @@ end
 ---@param possible boolean[]
 local function getAllSolutions(start, pinyin, result, solutions, possible)
   local len = PinyinNext.Utils.Utf8Len(pinyin)
-  if start > len then
+  if len > 0 and start > len then
     local last = result[#result]
     if string.find(last, ",") then
       table.remove(result)
