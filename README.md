@@ -10,12 +10,13 @@ This is an addon about [Pinyin](https://en.wikipedia.org/wiki/Pinyin), creating 
 - Add Pinyin-related features for other addons, such as Pinyin search and Pinyin sorting.
 - Known Issues and Limitations:
   - No native interface-related features yet
-  - No word lexicon, polyphonic characters may lead to inaccurate search and sorting
-  - Some rare characters may not be in the lexicon, will be added when discovered
+  - No word database, polyphonic characters may lead to inaccurate search and sorting
+  - Some rare characters may not be in the dict, will be added when discovered
+  - Searching for a large number of items may cause lag.
 
 ## Supported Addons
 
-- [Baganator](https://www.curseforge.com/wow/addons/baganator) (Syndicator)：Supports Pinyin and Pinyin initial letter search for items.
+- [Baganator](https://www.curseforge.com/wow/addons/baganator) (Syndicator): Supports Pinyin and Pinyin initial letter search for items.
 - [MountsJournal](https://www.curseforge.com/wow/addons/mountsjournal): Supports Pinyin and Pinyin initial letter search.
 - [Rematch](https://www.curseforge.com/wow/addons/rematch): Supports Pinyin and Pinyin initial letter search.
 - [Routes](https://www.curseforge.com/wow/addons/routes): Sorts zone lists by Pinyin.
@@ -35,6 +36,7 @@ This is an addon about [Pinyin](https://en.wikipedia.org/wiki/Pinyin), creating 
   - 暂无原生界面相关的功能
   - 无词语词库，多音字可能会导致搜索和排序不准确
   - 部分生僻字可能不在词库中，如发现再补充
+  - 搜索项目较多时，可能有卡顿
 
 ## 支持的插件
 
