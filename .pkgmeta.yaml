@@ -3,6 +3,7 @@ ignore:
   - .github
   - .vscode
   - .gitignore
-  - development.sh
+  - .pkgmeta
+  - dev.ps1
   - LICENSE
   - README.md

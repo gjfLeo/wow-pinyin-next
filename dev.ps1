@@ -1,0 +1,1 @@
+New-Item -ItemType SymbolicLink -Path 'C:\Programs\World of Warcraft\_retail_\Interface\AddOns\PinyinNext' -Target (Get-Location)
