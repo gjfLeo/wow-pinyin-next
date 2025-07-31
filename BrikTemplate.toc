@@ -1,9 +1,0 @@
-## Interface: 110107
-
-## Title: BrikTemplate
-## Author: Brik
-## Version: @project-version@
-## SavedVariables: BrikTemplateSaved
-## X-Curse-Project-ID: 0
-
-BrikTemplate.lua

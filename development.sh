@@ -3,7 +3,7 @@
 # Requires inotify-tools (apt install inotify-tools on WSL2)
 # Usage: ./development.sh [addon install directory]
 
-ADDON_NAME=BrikTemplate
+ADDON_NAME=PinyinNext
 
 # Get the directory of the script itself (even when sourced or symlinked)
 SRC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

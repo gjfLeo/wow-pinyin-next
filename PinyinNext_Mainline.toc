@@ -1,0 +1,8 @@
+## Interface: 110107
+
+## Title: PinyinNext
+## Author: gjfLeo
+## Version: @project-version@
+## X-Curse-Project-ID: 0
+
+main.lua
