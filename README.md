@@ -15,6 +15,7 @@ This is an addon about [Pinyin](https://en.wikipedia.org/wiki/Pinyin), creating 
 
 ## Supported Addons
 
+- [Baganator](https://www.curseforge.com/wow/addons/baganator) (Syndicator)：Supports Pinyin and Pinyin initial letter search for items.
 - [MountsJournal](https://www.curseforge.com/wow/addons/mountsjournal): Supports Pinyin and Pinyin initial letter search.
 - [Rematch](https://www.curseforge.com/wow/addons/rematch): Supports Pinyin and Pinyin initial letter search.
 - [Routes](https://www.curseforge.com/wow/addons/routes): Sorts zone lists by Pinyin.
@@ -37,6 +38,7 @@ This is an addon about [Pinyin](https://en.wikipedia.org/wiki/Pinyin), creating 
 
 ## 支持的插件
 
+- [Baganator](https://www.curseforge.com/wow/addons/baganator) (Syndicator)：物品支持拼音和拼音首字母搜索。
 - [MountsJournal](https://www.curseforge.com/wow/addons/mountsjournal)：支持拼音和拼音首字母搜索。
 - [Rematch](https://www.curseforge.com/wow/addons/rematch)：支持拼音和拼音首字母搜索。
 - [Routes](https://www.curseforge.com/wow/addons/routes)：使区域列表按拼音排序。
